@@ -1,0 +1,203 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .login-main-container{
+    padding-top: 8vw;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    background-size: cover;
+    height: 100vh;
+
+ }
+ .login-sub-container{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    height: 25vw;
+    width: 25vw;
+    margin-left: 35vw;
+    padding: 5vw;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+ }
+ .css-button-rounded--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #212529;
+    background: #212529;
+  }
+  .css-button-rounded--black:hover {
+    background: #fff;
+    color: #212529
+  }
+  .login-main-heading {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: italic normal normal 33px/1 "Lucida Console", Monaco, monospace;
+    color: black;
+    -o-text-overflow: ellipsis;
+    font-size: 35px;
+    text-overflow: ellipsis;
+    text-shadow: 4px 0 9px rgba(86,170,255,0.9) ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  }
+  .form-field {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal Impact, Charcoal, sans-serif;
+    color: rgba(0,142,198,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(252,252,252,1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  }
+  .form-head{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .sign-up-container{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    height: 3vw;
+    width: 18vw;
+    padding: 10px;
+    margin-left: 35vw;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  .signup-main-container{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    height: 100vh;
+}
+.signup-sub-container{
+    border-radius: 29px;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    box-shadow:  50px 50px 100px #696969,
+             -50px -50px 100px #ffffff;
+    height: 28vw;
+    width: 30vw;
+    color: #ffffff;
+    margin-left: 10vw;
+    padding-left: 4vw;
+    padding-top: 2vw;
+}
+.css-button-arrow--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40
+  }
+  .css-button-arrow--black:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--black:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--black:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+.form-paragraph{
+    color: black;
+    font-size: 20px;
+}
+.nav_image{
+    height: 40px;
+    border-radius: 10px;
+ }
+ .css-button-sliding-to-left--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #2c0b8e;
+    color: #2c0b8e;
+  }
+  .css-button-sliding-to-left--blue:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--blue:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--blue:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #2c0b8e;
+  }
+.home-cont{
+    text-align: center;
+    margin-top: 20px;
+}  
+.question-main{
+  font-size: 20px;
+  font-family: Roboto;
+  margin-left: 20px;
+}

@@ -1,0 +1,12 @@
+<div class="home-cont">
+<h2 class="main-home-heading">hi!<%= current_user.username %>,
+   welcome to quiz app</h2>
+<%= button_to "Take quiz", questions_path,class:"css-button-sliding-to-left--blue", method: :get %>
+<div>
+
+
+<% if current_user.is_admin? %>
+
+<%= button_to "Add Questions", new_question_path,class:"btn btn-primary ", method: :get %>
+
+<%end%>

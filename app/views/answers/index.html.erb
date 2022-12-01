@@ -1,0 +1,14 @@
+<% @answers.each do |a|%>
+    
+    <p><%= Question.find(a.question_id).question_content %> <br/><p>
+    <p>Your answer : <%= a.answer %></p>
+    <p>Correct answer : <%= Question.find(a.question_id).correct_answer %><p>
+    <% if  Question.find(a.question_id).correct_answer == a.answer %>
+      <p>-> correct </p>
+      <%else%>
+      <p>->wrong</p>
+      <% end %>
+      <p>--------------------------</p>
+<% end %>
+
+<%= button_to "Home", root_path,class:"btn btn-primary ", method: :get %>

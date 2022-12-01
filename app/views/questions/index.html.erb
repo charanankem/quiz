@@ -1,0 +1,32 @@
+<div class="question-main">
+<div>
+<% @questions.each do |question| %>
+    <%= question.question_content %><br/>
+    <%= form_with url: "/answers/new", method: :post do |f| %>
+
+    <%= f.radio_button :answer, question.option_1 %> 
+    <%= f.label :answer, question.option_1 %>
+
+    <%= f.radio_button :answer, question.option_2 %> 
+    <%= f.label :answer, question.option_2 %>
+
+    <%= f.radio_button :answer, question.option_3 %> 
+    <%= f.label :answer, question.option_3 %>
+
+    <%= f.radio_button :answer, question.option_4 %> 
+    <%= f.label :answer, question.option_4 %><br/>
+
+    <%= f.hidden_field :question_id, value: question.id %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+    <div class="actions">
+  <%= f.submit "Submit" %>
+
+</div>  <br/>
+<% end %>
+<% end %>
+
+<%= button_to "results", answers_path, method: :get %>
+</div>
+</div>
+
+
